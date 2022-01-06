@@ -1,4 +1,4 @@
-.work-title{
+.work__title{
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: bold;
@@ -9,20 +9,18 @@
   color: var(--text-primary);
 }
 
-.work-container{
+.work__container{
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
-.work-box{
+.work__box{
  position: relative;
-}
 
-.work-box:not(:last-child){
-  margin-right: 30px;
-  
+&:not(:last-child){
+  margin-right: 30px;}
 }
-.shedow-text{
+.work__text{
   font-style: normal;
   font-weight: bold;
   margin: 0;
@@ -33,7 +31,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.shedow{
+.work__shedow{
   position: absolute;
   bottom: 0;
   left: 0;

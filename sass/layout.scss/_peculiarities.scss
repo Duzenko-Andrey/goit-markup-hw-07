@@ -1,19 +1,17 @@
-.special-container{
+.peculiarites{
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.special-section{
-  padding-top: 0;
-}
-
-.special-box{
+.peculiarites__box{
   flex-wrap: wrap;
   width: 270px;
+&:not(:last-child){
+  margin-right: 30px;}
 }
 
-.box-svg{
+.peculiarites__svg{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,10 +21,9 @@
   background-color: #F5F4FA;
 }
 
-.special-box:not(:last-child){
-  margin-right: 30px;}
 
-.title-list{
+
+.peculiarites__title{
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: bold;
@@ -37,7 +34,7 @@
   color: var(--text-primary);
 }
 
-.title-text{
+.peculiarites__text{
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;

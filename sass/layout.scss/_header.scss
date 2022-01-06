@@ -2,7 +2,7 @@
 border-bottom: 1px solid #ECECEC;
 
 }
-.logo{
+.nav__logo{
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 93px;
@@ -15,7 +15,7 @@ border-bottom: 1px solid #ECECEC;
   text-decoration: none;
 }
 
-.logo-icon{
+.nav__icon{
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -25,19 +25,7 @@ border-bottom: 1px solid #ECECEC;
   text-decoration: none;
 }
 
-.logo-icon-color{
-  margin-top: 0;
-  margin-bottom: 20px;    
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.12;
-  letter-spacing: 0.03em;    
-  color: var(--primary-white-color);
-  text-decoration: none;
-}
-
-.header-nav{
+.nav{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -47,16 +35,18 @@ border-bottom: 1px solid #ECECEC;
 /* Навигация на другие страницы */
 
 
-.nav{
+.nav-row{
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
+
 }
-.nav-item:not(:last-child){
+.nav-row__item:not(:last-child){
   margin-right: 50px;
+
 }
 
-.nav-pagination{
+.nav-row__list{
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -68,17 +58,16 @@ border-bottom: 1px solid #ECECEC;
   letter-spacing: 0.02em;
   transition: color var(--bezier-time);
  
-}
-.nav-pagination:hover,
-.nav-pagination:focus{
-  color: var(--theme-color);
+&:hover,
+&:focus{
+  color: var(--theme-color);}
      
 }
-.activ{
+.nav-row__list--activ{
   color: var(--theme-color);
   transition: color var(--bezier-time);
-}
-.activ::before{
+
+&::before{
   content: "";
   position: absolute;
   bottom: 0;
@@ -86,7 +75,7 @@ border-bottom: 1px solid #ECECEC;
   border-radius: 2px;
   height: 4px;
   display: inline-block;
-  width: 100%;
+  width: 100%;}
 }
 
 /* Ссылка на вебсайт,телефонный номер */
@@ -99,7 +88,7 @@ border-bottom: 1px solid #ECECEC;
 
 }
 
-.nav-all{
+.nav-box__list{
   display: flex;
   align-items: center;
   margin-right: 30px;
@@ -112,29 +101,28 @@ border-bottom: 1px solid #ECECEC;
   color: var(--text-secondary);
   letter-spacing: 0.02em;
   transition: color var(--bezier-time);
-}
-.nav-all:hover,
-.nav-all:focus{
-  color: var(--theme-color);
+
+&:hover,
+&:focus{
+  color: var(--theme-color);}
 }
  
 
-.svg-list{
+.nav-box__svg{
   fill: var(--text-secondary);
   margin-right: 10px;
   transition: fill var(--bezier-time);
-}
 
-.svg-list:hover,
-.svg-list:focus{
+&:hover,
+&:focus{
   fill: var(--theme-color);
 }
-.nav-all:hover .svg-list,
-.nav-all:focus .svg-list{
+.nav-box__list:hover &,
+.nav-box__list:focus &{
   fill: var(--theme-color);
-  transition: fill var(--bezier-time);
+  transition: fill var(--bezier-time);}
 }
-.nav-all-phone{
+.nav-box__list--phone{
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -146,14 +134,13 @@ border-bottom: 1px solid #ECECEC;
   color: var(--text-secondary);
   letter-spacing: 0.02em;
   transition: color var(--bezier-time);
-}
 
-.nav-all-phone:hover,
-.nav-all-phone:focus{
-  color: var(--theme-color);   
-}
-.nav-all-phone:hover .svg-list,
-.nav-all-phone:focus .svg-list{
+&:hover,
+&:focus{
+  color: var(--theme-color);}  
+
+&:hover .nav-box__svg,
+&:focus .nav-box__svg{
   fill: var(--theme-color);
-  transition: fill var(--bezier-time);
+  transition: fill var(--bezier-time);}
 }

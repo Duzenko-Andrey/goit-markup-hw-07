@@ -1,2 +1,18 @@
 // variables
-@import "./utils/vars.scss";
+@import "./utils/vars";
+
+// base styles
+@import "./base/base-styles";
+
+// components
+@import "./components/modal";
+
+// layout
+@import "./layout.scss/header";
+@import "./layout.scss/hero";
+@import "./layout.scss/peculiarities";
+@import "./layout.scss/work";
+@import "./layout.scss/command";
+@import "./layout.scss/clients";
+@import "./layout.scss/footer";
+@import "./layout.scss/portfolio";
