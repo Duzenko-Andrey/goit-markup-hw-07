@@ -8,15 +8,14 @@
 
   opacity: 1;
   transition: opacity var(--bezier-time);
-}
-.backdrop.is-hidden{
+
+&.is-hidden{
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
-}
+  visibility: hidden;}
 
-.backdrop.is-hedden .modal{
- transform: translate(-50%, -50%) scale(1.1);
+&.is-hedden .modal{
+ transform: translate(-50%, -50%) scale(1.1);}
 }
 .modal{
   position: absolute;
@@ -146,7 +145,7 @@
 }
 .chek-box:checked + .chek-ikon{
   
-   background-color: var(--theme-color);
+  background-color: var(--theme-color);
   background-origin: border-box;
   background-size: contain;
   border-color: transparent;
@@ -166,7 +165,9 @@
   margin-bottom: 42px;
   width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
+
   cursor: pointer;
   background: #188CE8;
   color: var(--primary-white-color);
