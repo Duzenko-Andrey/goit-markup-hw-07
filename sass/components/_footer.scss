@@ -157,7 +157,7 @@ rgba(33, 150, 243, 1);}
 &:focus{
  color: var(--primary-white-color);}
 }
-.submit{
+.form__submit{
   display: flex;
   align-items: center;
   text-align: center;
@@ -176,7 +176,7 @@ rgba(33, 150, 243, 1);}
   cursor: pointer;
   color: var(--primary-white-color);
 }
-.submit__icon{
+.form__submit-icon{
   background-color: var(--theme-color);
   color: var(--primary-white-color);
   margin-left: 10px;
